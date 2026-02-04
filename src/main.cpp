@@ -9,14 +9,14 @@ void setup() {
 }
 
 void loop() {
-    // myServo.write(0);
-    // delay(500);
-    // myServo.write(90);
-    // delay(500);
-    // myServo.write(120);
-    // delay(500);
-    // myServo.write(180);
-    // delay(500);
+    myServo.write(0);
+    delay(500);
+    myServo.write(90);
+    delay(500);
+    myServo.write(120);
+    delay(500);
+    myServo.write(180);
+    delay(500);
     for (int angle = 0;angle<=180;angle+=10){
         myServo.write(angle);
         Serial.print("Angle: ");
